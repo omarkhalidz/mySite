@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/a351037180.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ---------------------Header--------------------------------------->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p class="logo"><span>O</span>mar</p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i onclick="closeMenu()" class="fas fa-regular fa-circle-xmark"></i>
+          </ul>
+          <i onclick="openMenu()" class="fas fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span>Omar</span> <br />Khalid From Egypt</h1>
+        </div>
+      </div>
+      <!-- ---------------------About--------------------------------------->
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/omar3.JPG" alt="img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Omar Khalid, a front-end developer and a graduate of the
+              Faculty of Artificial Intelligence, class of 2024. Born in 2002,
+              I'm passionate about creating modern, user-friendly websites using
+              JavaScript and other cutting-edge technologies. I love exploring
+              new ideas, solving problems, and staying updated with advancements
+              in web development and AI. Let's connect and create something
+              amazing together!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor's Degree in Artificial Intelligence</span
+                  ><br />
+                  Graduated from the Faculty of Artificial Intelligence at
+                  Kafrelsheikh University, gaining a solid understanding of AI
+                  principles and applications.
+                </li>
+                <li>
+                  <span>Self-Learning in Web Development</span><br />
+                  Continuously enhancing skills through hands-on practice and
+                  free online resources in HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                  <span>Online JavaScript Course</span><br />
+                  Completed a comprehensive course on JavaScript, mastering the
+                  basics and working on practical assignments.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>HTML</span><br />
+                  The core language for structuring web content, defining
+                  elements like headings, paragraphs, and multimedia.
+                </li>
+                <li>
+                  <span>CSS</span><br />
+                  A styling language that enhances web pages with layouts,
+                  colors, fonts, and responsive designs.
+                </li>
+                <li>
+                  <span>JavaScript</span><br />
+                  A powerful scripting language that adds interactivity and
+                  dynamic features to web pages
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Front-End Development</span><br />
+                  Skilled in building responsive and visually appealing websites
+                  using HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                  <span>JavaScript Proficiency</span><br />
+                  Proficient in implementing dynamic functionalities and
+                  enhancing user experience through interactive web features.
+                </li>
+                <li>
+                  <span>Web Design Basics</span><br />
+                  Experienced in designing simple, user-friendly layouts that
+                  prioritize clarity and functionality.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------Services--------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              We offer professional web design services focused on creating
+              visually appealing, user-friendly websites. Our designs prioritize
+              seamless user experience, responsive layouts, and fast loading
+              times. We ensure your site is optimized for search engines to help
+              attract more visitors.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/search?q=web+design&oq=Web+Design&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPTIGCAYQRRg9MgYIBxBFGD3SAQc5MTlqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"
+              >Learn More...</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              We specialize in UI/UX design to create intuitive and engaging
+              user interfaces. Our focus is on enhancing user experience by
+              ensuring easy navigation, clear layouts, and responsive designs.
+              We aim to deliver seamless, visually appealing websites that meet
+              the needs of your audience.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/search?q=ui%2Fux+design&sca_esv=378ee611ca261f2e&ei=PoNfZ6i9AtHYi-gP_LHYuQc&oq=ui%2Fux+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnVpL3V4ICoCCAIyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMUjUABYtRNwAHgBkAEAmAGXAqABsAiqAQUwLjUuMbgBA8gBAPgBAZgCBqACxgjCAgoQABiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgINEAAYgAQYsQMYQxiKBcICDhAuGIAEGLEDGNEDGMcBmAMAkgcFMC41LjGgB5wm&sclient=gws-wiz-serp"
+              >Learn More...</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              We provide expert app design services, focusing on creating
+              intuitive, user-friendly mobile applications. Our designs ensure
+              smooth navigation, responsive interfaces, and engaging user
+              experiences. We aim to deliver apps that are visually appealing
+              and function seamlessly across all devices.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/search?q=application+design&sca_esv=378ee611ca261f2e&ei=PoNfZ6i9AtHYi-gP_LHYuQc&oq=appl&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGFwcGwqAggAMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyExAuGIAEGLEDGNEDGEMYxwEYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMg4QABiABBixAxiDARiKBTIIEAAYgAQYsQMyCBAAGIAEGLEDSPoaUPMIWNkOcAN4AZABAJgBfKABswOqAQMxLjO4AQPIAQD4AQGYAgegAs4DwgIKEAAYsAMY1gQYR8ICDhAuGIAEGLEDGNEDGMcBwgIOEC4YgAQYsQMYgwEYigXCAgsQABiABBixAxiKBZgDAIgGAZAGCJIHAzMuNKAH5R8&sclient=gws-wiz-serp"
+              >Learn More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------portfolio------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/10.jpg" alt="img" />
+            <div class="layer">
+              <h3>Web Design Template</h3>
+              <p>
+                A modern, user-friendly web design template featuring clean,
+                minimalist layouts, vibrant colors, and easy navigation.
+              </p>
+              <a href="https://omarkhalidz.github.io/Project-2/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/11.jpg" alt="img" />
+            <div class="layer">
+              <h3>Creative Web Layout</h3>
+              <p>
+                A visually striking web design with interactive elements,
+                dynamic features, and smooth transitions, perfect for showcasing
+                creative services.
+              </p>
+              <a href="https://omarkhalidz.github.io/project-3/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/13.jpg" alt="img" />
+            <div class="layer">
+              <h3>Dashboard UI</h3>
+              <p>
+                A professional, interactive dashboard UI for project management,
+                including task tracking, project updates, and team collaboration
+                tools.
+              </p>
+              <a href="https://omarkhalidz.github.io/project-4/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn"
+          href="https://github.com/omarkhalidz?tab=repositories"
+          target="_blank"
+          >See More</a
+        >
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:omar.khalid3555@gmail.com">
+                omar.khalid3555@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+201028115063"> +20 1028115063</a>
+            </p>
+            <div class="social-icons">
+              <a
+                class="facebook"
+                target="_blank"
+                href="https://www.facebook.com/omarkhalidzakaria
+              "
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="tiktok"
+                target="_blank"
+                href="https://www.tiktok.com/@omarkhalid_z"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                class="instagram"
+                target="_blank"
+                href="https://www.instagram.com/omarkhalid_z"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                class="twitter"
+                target="_blank"
+                href="https://www.twitter.com/omarkhalid_z"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <a
+                class="snapchat"
+                target="_blank"
+                href="https://www.snapchat.com/add/omarkhalid_z"
+                ><i class="fa-brands fa-snapchat"></i
+              ></a>
+              <a
+                class="linkedin"
+                target="_blank"
+                href="https://www.linkedin.com/in/omarkhalidz/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                class="github"
+                target="_blank"
+                href="https://github.com/omarkhalidz"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                class="youtube"
+                target="_blank"
+                href="https://www.youtube.com/@omarkhalid_z"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <a href="images/Omar_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Omar 2024 Made With <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwJe73fLezjz4jOMmNpjBDKDyXc41X3bWTfBRNw9jmkiutxKBCN_-UGg6ZONBrRUM4O/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      let msg = document.querySelector("#msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = `Message Sent Successfully!`;
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
